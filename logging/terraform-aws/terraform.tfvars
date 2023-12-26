@@ -14,8 +14,8 @@ application = "monitoring"
 
 # CIDR Ingress Variables
 create_ingress_cidr      = true
-ingress_cidr_from_port   = [22, 80, 443, 9090, 9100, 9093, 3000]             # List of from ports
-ingress_cidr_to_port     = [22, 80, 443, 9090, 9100, 9093, 3000]             # List of to ports
+ingress_cidr_from_port   = [22, 80, 443, 5601, 9100, 9200, 9300]             # List of from ports
+ingress_cidr_to_port     = [22, 80, 443, 5601, 9100, 9200, 9300]             # List of to ports
 ingress_cidr_protocol    = ["tcp", "tcp", "tcp", "tcp", "tcp", "tcp", "tcp"] # Protocol for all rules (you can add more if needed)
 ingress_cidr_block       = ["0.0.0.0/0", "0.0.0.0/0", "0.0.0.0/0", "0.0.0.0/0", "0.0.0.0/0", "0.0.0.0/0", "0.0.0.0/0"]
 ingress_cidr_description = ["SSH", "HTTP", "HTTPS", "Prometheus", "Node-exporter", "Alert manager", "Grafana"]
