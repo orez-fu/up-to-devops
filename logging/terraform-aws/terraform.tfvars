@@ -1,7 +1,7 @@
 # EC2 Instance Variables
 region         = "us-east-1"
 ami_id         = "ami-06aa3f7caf3a30282"
-instance_type  = "t2.micro"
+instance_type  = "t2.medium"
 key_name       = "learning"
 instance_count = 1
 volume-size    = 20
