@@ -10,9 +10,12 @@ sudo vim /etc/filebeat/filebeat.yml
 ```conf
 
 filebeat.inputs:
-- type: container
-  paths:
-    - '/var/log/containers/*.log'
+- type: docker
+  combine_partial: true
+  containers:
+    path: "/var/lib/docker/containers"
+    ids:
+      - "*"
 - type: log
   paths:
     - /var/log/syslog
