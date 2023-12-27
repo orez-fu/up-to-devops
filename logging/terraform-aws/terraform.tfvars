@@ -7,10 +7,10 @@ instance_count = 1
 volume-size    = 20
 
 # Ec2 Tags
-name        = "monitoring-stack"
+name        = "logging-stack"
 prefix      = "phu"
 environment = "dev"
-application = "monitoring"
+application = "logging"
 
 # CIDR Ingress Variables
 create_ingress_cidr      = true
